@@ -13,7 +13,7 @@
 <body>
     <table class="table">
         <thead>
-            <a href="nuevo_cliente">Nuevi Cliente</a>
+            <a href="nuevo_cliente">Nuevo Cliente</a>
             <tr>
                 <th>Id de Cliente</th>
                 <th>Nombre y Apellido</th>
