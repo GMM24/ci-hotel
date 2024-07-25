@@ -23,13 +23,13 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Hoteles
+                            Clientes
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo base_url ('ver_cliente');?>">Clientes</a></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url ('ver_hotel');?>">Hoteles</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-people-fill"></i> Clientes</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url ('ver_hotel');?>"><i class="bi bi-building-fill"></i> Hoteles</a></li>
                             <li><a class="dropdown-item"
-                                    href="<?php echo base_url ('ver_reservacion');?>">Reservaciones</a></li>
+                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar2-week-fill"></i> Reservaciones</a></li>
                         </ul>
                     </li>
 
@@ -52,7 +52,7 @@
         </div>
         <div class="mb-3">
             <label for="txtNit" class="form-label">Nit</label>
-            <input type="text" class="form-control" id="txtNit" name="txtNit"
+            <input type="number" class="form-control" id="txtNit" name="txtNit"
                 placeholder="Ingrese su DIrección">
         </div>
         <div class="mb-3">
@@ -62,7 +62,7 @@
         </div>
         <div class="mb-3">
             <label for="txtCorreo" class="form-label">Correo Electrónico</label>
-            <input type="number" class="form-control" id="txtCorreo" name="txtCorreo"
+            <input type="text" class="form-control" id="txtCorreo" name="txtCorreo"
                 placeholder="Ingrese Número de telefono">
         </div>
         <div class="mb-3">
@@ -71,9 +71,10 @@
                 placeholder="Ingrese su correo electronico">
         </div>
 
-        <button type="submit" class="btn btn-primary" id="btnGuardar" name="btnGuardar">Enviar</button>
+        <button type="submit" class="btn btn-primary" id="btnGuardar" name="btnGuardar"><i class="bi bi-person-check-fill"></i> Guardar</button>
     </form>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
 
