@@ -6,14 +6,14 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 //MENU
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Menu::index');
 
 //CLIENTES  
 $routes->get('ver_cliente', 'Clientes::index');
 $routes->post('agregar_cliente', 'Clientes::agregarCliente');
 $routes->get('nuevo_cliente', 'Clientes::nuevoCliente');
-$routes->get('eliminar_cliente', 'Clientes::eliminarCliente');
-$routes->get('buscar_cliente', 'Clientes::buscarCliente');
+$routes->get('eliminar_cliente/(:num)', 'Clientes::eliminarCliente/$1');
+$routes->get('buscar_cliente/(:num)', 'Clientes::buscarCliente/$1');
 $routes->post('modificar_cliente', 'Clientes::modificarCliente');
 
 //HOTELES

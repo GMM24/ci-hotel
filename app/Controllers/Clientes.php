@@ -18,12 +18,12 @@ class Clientes extends BaseController
     public function agregarCliente()
     {
         $datos=[
-            'cliente_id'=>$this->request->getVar('txtIdCliente')
-            'nombre'=>$this->request->getVar('txtNombre')
-            'apellido'=>$this->request->getVar('txtApellido')
-            'nit'=>$this->request->getVar('txtNit')
-            'telefono'=>$this->request->getVar('txtTelefono')
-            'correo_electronico'=>$this->request->getVar('txtCorreo')
+            'cliente_id'=>$this->request->getVar('txtIdCliente'),
+            'nombre'=>$this->request->getVar('txtNombre'),
+            'apellido'=>$this->request->getVar('txtApellido'),
+            'nit'=>$this->request->getVar('txtNit'),
+            'telefono'=>$this->request->getVar('txtTelefono'),
+            'correo_electronico'=>$this->request->getVar('txtCorreo'),
             'direccion'=>$this->request->getVar('txtDireccion')
 
         ];
