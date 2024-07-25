@@ -6,10 +6,10 @@ use CodeIgniter\Model;
 
 class ClientesModel extends Model
 {
-    protected $table         = 'ciudadanos';
-    protected $primaryKey = 'clientes_id';
+    protected $table         = 'clientes';
+    protected $primaryKey = 'cliente_id';
     protected $allowedFields =[
-        'clientes_id',
+        'cliente_id',
         'nombre',
         'apellido',
         'nit',

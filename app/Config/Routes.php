@@ -20,14 +20,14 @@ $routes->post('modificar_cliente', 'Clientes::modificarCliente');
 $routes->get('ver_hotel', 'Hoteles::index');
 $routes->post('agregar_hotel', 'Hoteles::agregarHotel');
 $routes->get('nuevo_hotel', 'Hoteles::nuevoHotel');
-$routes->get('eliminar_hotel', 'Hoteles::eliminarHotel');
-$routes->get('buscar_hotel', 'Hoteles::buscarHotel');
+$routes->get('eliminar_hotel/(:num)', 'Hoteles::eliminarHotel/$1');
+$routes->get('buscar_hotel/(:num)', 'Hoteles::buscarHotel/$1');
 $routes->post('modificar_hotel', 'Hoteles::modificarHotel');
 
 //RESERVACIONES
 $routes->get('ver_reservacion', 'Reservaciones::index');
 $routes->post('agregar_reservacion', 'Reservaciones::agregarReservacion');
 $routes->get('nuevo_reservacion', 'Reservaciones::nuevoReservacion');
-$routes->get('eliminar_reservacion', 'Reservaciones::eliminarReservacion');
-$routes->get('buscar_reservacion', 'Reservaciones::buscarReservacion');
+$routes->get('eliminar_reservacion/(:num)', 'Reservaciones::eliminarReservacion/$1');
+$routes->get('buscar_reservacion/(:num)', 'Reservaciones::buscarReservacion/$1');
 $routes->post('modificar_reservacion', 'Reservaciones::modificarReservacion');
