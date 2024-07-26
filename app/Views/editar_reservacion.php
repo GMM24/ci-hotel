@@ -12,7 +12,7 @@
 
 <body class="bg-primary-subtle">
     <div class="container">
-        <h1>Editar Reservaión</h1>
+        <h1>Editar Reservación</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
             <a class="navbar-brand" href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar2-week-fill"></i> Reservaciones</a>                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
