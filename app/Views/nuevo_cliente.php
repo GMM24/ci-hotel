@@ -37,38 +37,38 @@
             </div>
         </div>
     </nav>
-    <form action="agregar_cliente" method="post">
+    <form action="agregar_cliente" method="post" >
         <div class="mb-3">
             <label for="txtIdCliente" class="form-label">Id de Cliente</label>
-            <input type="number" class="form-control" id="txtIdCliente" name="txtIdCliente" placeholder="Ingrese Id del cliente">
+            <input type="number" class="form-control" id="txtIdCliente" name="txtIdCliente" placeholder="Ingrese Id del cliente"required>
         </div>
         <div class="mb-3">
             <label for="txtNombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Ingrese Nombre del cliente">
+            <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Ingrese Nombre del cliente"required>
         </div>
         <div class="mb-3">
             <label for="txtApellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Ingrese Apellido del cliente">
+            <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Ingrese Apellido del cliente"required>
         </div>
         <div class="mb-3">
             <label for="txtNit" class="form-label">Nit</label>
             <input type="number" class="form-control" id="txtNit" name="txtNit"
-                placeholder="Ingrese el nit del cliente">
+                placeholder="Ingrese el nit del cliente"required>
         </div>
         <div class="mb-3">
             <label for="txtTelefono" class="form-label">Teléfono</label>
             <input type="number" class="form-control" id="txtTelefono" name="txtTelefono"
-                placeholder="Ingrese su Numero de telefono del cliente">
+                placeholder="Ingrese su Numero de telefono del cliente"required>
         </div>
         <div class="mb-3">
             <label for="txtCorreo" class="form-label">Correo Electrónico</label>
-            <input type="text" class="form-control" id="txtCorreo" name="txtCorreo"
-                placeholder="Ingrese el correo electronico del cliente">
+            <input type="email" class="form-control" id="txtCorreo" name="txtCorreo"
+                placeholder="Ingrese el correo electronico del cliente"required>
         </div>
         <div class="mb-3">
             <label for="txtDireccion" class="form-label">Direccion</label>
             <input type="text" class="form-control" id="txtDireccion" name="txtDireccion"
-                placeholder="Ingrese la direccion de domicilio del cliente">
+                placeholder="Ingrese la direccion de domicilio del cliente"required>
         </div>
 
         <button type="submit" class="btn btn-success" id="btnGuardar" name="btnGuardar"><i class="bi bi-person-check-fill"></i> Guardar</button>

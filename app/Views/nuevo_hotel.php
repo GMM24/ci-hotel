@@ -39,11 +39,11 @@
                 </div>
             </div>
         </nav>
-        <form action="<?=base_url('agregar_hotel')?>" method="post">
+        <form action="<?=base_url('agregar_hotel')?>" method="post" required>
             <div class="mb-3">
                 <label for="txtIdHotel" class="form-label">Id del Hotel</label>
                 <input type="number" class="form-control" id="txtIdHotel" name="txtIdHotel"
-                    placeholder="Ingrese Id del Hotel">
+                    placeholder="Ingrese Id del Hotel" required>
             </div>
             <div class="mb-3">
                 <label for="txtNombre" class="form-label">Nombre </label>
@@ -52,17 +52,17 @@
             </div>
             <div class="mb-3">
                 <label for="txtCorreo" class="form-label">Correo Electrónico</label>
-                <input type="text" class="form-control" id="txtCorreo" name="txtCorreo" placeholder="Ingrese el correo electronico del hotel" >
+                <input type="email required" class="form-control" id="txtCorreo" name="txtCorreo" placeholder="Ingrese el correo electronico del hotel" required >
             </div>
             <div class="mb-3">
                 <label for="txtTelefono" class="form-label">Teléfono</label>
                 <input type="number" class="form-control" id="txtTelefono" name="txtTelefono"
-                    placeholder="Ingrese el teléfono del Hotel">
+                    placeholder="Ingrese el teléfono del Hotel" required>
             </div>
             <div class="mb-3">
                 <label for="txtDireccion" class="form-label">Dirección</label>
                 <input type="text" class="form-control" id="txtDireccion" name="txtDireccion"
-                    placeholder="Ingrese la direccion del hotel">
+                    placeholder="Ingrese la direccion del hotel" required>
             </div>
             <div class="mb-3">
                 <label for="txtCiudad" class="form-label">Id de Ciudad</label>
@@ -83,7 +83,7 @@
             </div>
             <div class="mb-3">
                 <label for="txtIdCategoria" class="form-label">Id de Categoria </label>
-                    <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdCategoria" name="txtIdCategoria">
+                    <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdCategoria" name="txtIdCategoria" >
                     <option selected>Selecione la categoria del hotel</option>
                     <option value="101">1 </option>
                     <option value="102">2 </option>
@@ -94,7 +94,7 @@
             </div>
             <div class="mb-3">
                 <label for="txtIdUsuario" class="form-label">Id de Usiario</label>
-                    <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdUsuario" name="txtIdUsuario">
+                    <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdUsuario" name="txtIdUsuario" >
                     <option selected>Selecione Nombre de la ciudad</option>
                     <option value="2">Soyla Recepcionista</option>
                     <option value="5">Juan Perez</option>

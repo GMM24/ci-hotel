@@ -1,4 +1,4 @@
-<!doctype html>
+ required<!doctype html>
 <html lang="en">
 
 <head>
@@ -42,28 +42,28 @@
             <div class="mb-3">
                 <label for="txtIdReservacion" class="form-label">Id de la Reservación</label>
                 <input type="number" class="form-control" id="txtIdReservacion" name="txtIdReservacion"
-                    placeholder="Ingrese Id de Reservacion">
+                    placeholder="Ingrese Id de Reservacion" required>
             </div>
             <div class="mb-3">
                 <label for="txtFecha" class="form-label">Fecha </label>
-                <input type="date" class="form-control" id="txtFecha" name="txtFecha">
+                <input type="date" class="form-control" id="txtFecha" name="txtFecha" required>
             </div>
             <div class="mb-3">
                 <label for="txtCliente" class="form-label">Id de Cliente</label>
-                <input type="number" class="form-control" id="txtCliente" name="txtCliente" placeholder="Ingrese el Id del Cliente" >
+                <input type="number" class="form-control" id="txtCliente" name="txtCliente" placeholder="Ingrese el Id del Cliente"  required>
             </div>
             <div class="mb-3">
                 <label for="txtIdHotel" class="form-label">Id del Hotel</label>
-                <input type="number" class="form-control" id="txtIdHotel" name="txtIdHotel" placeholder="Ingrese el Id del Hotel" >
+                <input type="number" class="form-control" id="txtIdHotel" name="txtIdHotel" placeholder="Ingrese el Id del Hotel"  required>
             </div>
             <div class="mb-3">
                 <label for="txtDescripcion" class="form-label">Descripción</label>
                 <input type="text" class="form-control" id="txtDescripcion" name="txtDescripcion"
-                    placeholder="Ingrese la descripción del hotel">
+                    placeholder="Ingrese la descripción del hotel" required>
             </div>
             <div class="mb-3">
                 <label for="txtIdUsuario" class="form-label">Id de Usuario</label>
-                <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdUsuario" name="txtIdUsuario">
+                <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdUsuario" name="txtIdUsuario" required>
                     <option selected>Selecione Nombre de la ciudad</option>
                     <option value="2">Soyla Recepcionista</option>
                     <option value="5">Juan Perez</option>
