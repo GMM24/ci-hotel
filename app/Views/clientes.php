@@ -10,12 +10,12 @@
     <title>Clientes</title>
 </head>
 
-<body>
+<body class="bg-primary-subtle">
     <div class="container">
     <h1>Clientes</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="<?php echo base_url ('/');?>">Inicio</a>
+          <a class="navbar-brand" href="<?php echo base_url ('/');?>"><i class="bi bi-house-fill"></i>Inicio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,10 +26,10 @@
                   Clientes
                 </a>
                 <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-people-fill"></i> Clientes</a></li>
+                <li><a class="dropdown-item" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-people-fill"></i> Clientes</a></li>
                             <li><a class="dropdown-item" href="<?php echo base_url ('ver_hotel');?>"><i class="bi bi-building-fill"></i> Hoteles</a></li>
                             <li><a class="dropdown-item"
-                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar2-week-fill"></i> Reservaciones</a></li>
+                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar-event-fill "></i> Reservaciones</a></li>
                         </ul>
               </li>
              
@@ -48,6 +48,9 @@
                     <th>Teléfono</th>
                     <th>Correo Electrónico</th>
                     <th>Dirección</th>
+                    <th class="text-center">Acciones:</th>
+                    <th></th>
+                    
                 </tr>
             </thead>
             <tbody>

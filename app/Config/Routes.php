@@ -27,7 +27,7 @@ $routes->post('modificar_hotel', 'Hoteles::modificarHotel');
 //RESERVACIONES
 $routes->get('ver_reservacion', 'Reservaciones::index');
 $routes->post('agregar_reservacion', 'Reservaciones::agregarReservacion');
-$routes->get('nuevo_reservacion', 'Reservaciones::nuevoReservacion');
+$routes->get('nueva_reservacion', 'Reservaciones::nuevaReservacion');
 $routes->get('eliminar_reservacion/(:num)', 'Reservaciones::eliminarReservacion/$1');
 $routes->get('buscar_reservacion/(:num)', 'Reservaciones::buscarReservacion/$1');
 $routes->post('modificar_reservacion', 'Reservaciones::modificarReservacion');

@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  </head>
-  <body>
+<body class="bg-primary-subtle">
     <div class="container">
-        <h1>Editar Clientes</h1>
+        <h1>Editar Cliente</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="<?php echo base_url ('/');?>">Inicio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-person-circle"></i> Clientes</a>         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -26,7 +25,7 @@
                             <li><a class="dropdown-item" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-people-fill"></i> Clientes</a></li>
                             <li><a class="dropdown-item" href="<?php echo base_url ('ver_hotel');?>"><i class="bi bi-building-fill"></i> Hoteles</a></li>
                             <li><a class="dropdown-item"
-                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar2-week-fill"></i> Reservaciones</a></li>
+                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar-event-fill "></i> Reservaciones</a></li>
                         </ul>
               </li>
              
@@ -37,31 +36,31 @@
         <form action="<?=base_url('modificar_cliente')?>" method="post">
             <div class="mb-3">
                 <label for="txtIdCliente" class="form-label">Id de Cliente</label>
-                 <input type="number" class="form-control" id="txtIdCliente" name="txtIdCliente" placeholder="Ingrese Codigo de Departamento" value="<?=$datos['cliente_id'];?>" readonly>
+                 <input type="number" class="form-control" id="txtIdCliente" name="txtIdCliente" placeholder="Ingrese Id del Cliente" value="<?=$datos['cliente_id'];?>" readonly>
             </div>
             <div class="mb-3">
                 <label for="txtNombre" class="form-label">Nombre </label>
-                 <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Ingrese Nombre del Departamento" value="<?=$datos['nombre'];?>">
+                 <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Ingrese Nombre del cliente" value="<?=$datos['nombre'];?>">
             </div>
             <div class="mb-3">
                 <label for="txtApellido" class="form-label">Apellido</label>
-                 <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Ingrese la region (1 al 8) para el Departamento" value="<?=$datos['apellido'];?>">
+                 <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Ingrese el Apellido del cliente" value="<?=$datos['apellido'];?>">
             </div>
             <div class="mb-3">
                 <label for="txtNit" class="form-label">Nit</label>
-                 <input type="number" class="form-control" id="txtNit" name="txtNit" placeholder="Ingrese la region (1 al 8) para el Departamento" value="<?=$datos['nit'];?>">
+                 <input type="number" class="form-control" id="txtNit" name="txtNit" placeholder="Ingrese el nit del cliente " value="<?=$datos['nit'];?>">
             </div>
             <div class="mb-3">
                 <label for="txtTelefono" class="form-label">Teléfono</label>
-                 <input type="number" class="form-control" id="txtTelefono" name="txtTelefono" placeholder="Ingrese la region (1 al 8) para el Departamento" value="<?=$datos['telefono'];?>">
+                 <input type="number" class="form-control" id="txtTelefono" name="txtTelefono" placeholder="Ingrese el no. de telefono del cliente " value="<?=$datos['telefono'];?>">
             </div>
             <div class="mb-3">
                 <label for="txtCorreo" class="form-label">Correo Electrónico</label>
-                 <input type="email" class="form-control" id="txtCorreo" name="txtCorreo" placeholder="Ingrese la region (1 al 8) para el Departamento" value="<?=$datos['correo_electronico'];?>">
+                 <input type="email" class="form-control" id="txtCorreo" name="txtCorreo" placeholder="Ingrese el correo electronicp del cliente " value="<?=$datos['correo_electronico'];?>">
             </div>
             <div class="mb-3">
                 <label for="txtDireccion" class="form-label">Dirección</label>
-                 <input type="number" class="form-control" id="txtDireccion" name="txtDireccion" placeholder="Ingrese la region (1 al 8) para el Departamento" value="<?=$datos['direccion'];?>">
+                 <input type="text" class="form-control" id="txtDireccion" name="txtDireccion" placeholder="Ingrese la direccionb de cliente " value="<?=$datos['direccion'];?>">
             </div>
             <button type="submit" class="btn btn-success" id="btnGuardar" name="btnGuardar"><i class="bi bi-person-check-fill"></i> Guardar cambios</button>
         </form>

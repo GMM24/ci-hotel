@@ -9,14 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-
-<body>
+<body class="bg-primary-subtle">
     <div class="container">
-        <h1>Nueva Reservaión</h1>
+        <h1>Nueva Reservación</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="<?php echo base_url ('/');?>">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand" href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar2-week-fill"></i> Reservaciones</a>            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -32,7 +30,7 @@
                             <li><a class="dropdown-item" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-people-fill"></i> Clientes</a></li>
                             <li><a class="dropdown-item" href="<?php echo base_url ('ver_hotel');?>"><i class="bi bi-building-fill"></i> Hoteles</a></li>
                             <li><a class="dropdown-item"
-                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar2-week-fill"></i> Reservaciones</a></li>
+                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar-event-fill "></i> Reservaciones</a></li>
                         </ul>
                         </li>
 
@@ -40,31 +38,31 @@
                 </div>
             </div>
         </nav>
-        <form action="<?=base_url('agregar_hotel')?>" method="post">
+        <form action="<?=base_url('agregar_reservacion');?>" method="post">
             <div class="mb-3">
-                <label for="txtIdHotel" class="form-label">Id de la Reservación</label>
-                <input type="number" class="form-control" id="txtIdHotel" name="txtIdHotel"
-                    placeholder="Ingrese Id del Hotel">
+                <label for="txtIdReservacion" class="form-label">Id de la Reservación</label>
+                <input type="number" class="form-control" id="txtIdReservacion" name="txtIdReservacion"
+                    placeholder="Ingrese Id de Reservacion">
             </div>
             <div class="mb-3">
-                <label for="txtNombre" class="form-label">Fecha </label>
-                <input type="date" class="form-control" id="txtNombre" name="txtNombre">
+                <label for="txtFecha" class="form-label">Fecha </label>
+                <input type="date" class="form-control" id="txtFecha" name="txtFecha">
             </div>
             <div class="mb-3">
-                <label for="txtCorreo" class="form-label">Id de Cliente</label>
-                <input type="number" class="form-control" id="txtCorreo" name="txtCorreo" placeholder="Ingrese el correo electronico del hotel" >
+                <label for="txtCliente" class="form-label">Id de Cliente</label>
+                <input type="number" class="form-control" id="txtCliente" name="txtCliente" placeholder="Ingrese el Id del Cliente" >
             </div>
             <div class="mb-3">
-                <label for="txtCorreo" class="form-label">Id del Hotel</label>
-                <input type="number" class="form-control" id="txtCorreo" name="txtCorreo" placeholder="Ingrese el correo electronico del hotel" >
+                <label for="txtIdHotel" class="form-label">Id del Hotel</label>
+                <input type="number" class="form-control" id="txtIdHotel" name="txtIdHotel" placeholder="Ingrese el Id del Hotel" >
             </div>
             <div class="mb-3">
-                <label for="txtTelefono" class="form-label">Descripción</label>
-                <input type="number" class="form-control" id="txtTelefono" name="txtTelefono"
-                    placeholder="Ingrese el teléfono del Hotel">
+                <label for="txtDescripcion" class="form-label">Descripción</label>
+                <input type="text" class="form-control" id="txtDescripcion" name="txtDescripcion"
+                    placeholder="Ingrese la descripción del hotel">
             </div>
             <div class="mb-3">
-                <label for="txtDireccion" class="form-label">Id de Usuario</label>
+                <label for="txtIdUsuario" class="form-label">Id de Usuario</label>
                 <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdUsuario" name="txtIdUsuario">
                     <option selected>Selecione Nombre de la ciudad</option>
                     <option value="2">Soyla Recepcionista</option>
@@ -75,38 +73,9 @@
                     <option value="301">Daniel Urizar</option>
                     <option value="777">Soyel Administrador</option>
                     <option value="888">Soyel Recepcionista</option>
-                   
                 </select>
             </div>
-            <div class="mb-3">
-                <label for="txtCiudad" class="form-label">Id de Ciudad</label>
-                <select class="form-select form-select-sm" aria-label="Small select example" id="txtCiudad" name="txtCiudad">
-                    <option selected>Selecione Nombre de la ciudad</option>
-                    <option value="1">Guatemala</option>
-                    <option value="2">Retahuleu</option>
-                    <option value="4">Acapulco</option>
-                    <option value="5">Cancún</option>
-                    <option value="7">Cartagena</option>
-                    <option value="8">Bogota</option>
-                    <option value="11">Cartago</option>
-                    <option value="13">Rio de Janeiro</option>
-                    <option value="14">Sao Paulo</option>
-                    <option value="16">Cusco</option>
-                    <option value="17">Limar</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="txtIdCategoria" class="form-label">Id de Categoria </label>
-                    <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdCategoria" name="txtIdCategoria">
-                    <option selected>Selecione la categoria del hotel</option>
-                    <option value="101">1 </option>
-                    <option value="102">2 </option>
-                    <option value="103">3</option>
-                    <option value="104">4</option>
-                    <option value="105">5</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-success" id="btnGuardar" name="btnGuardar"><i class="bi bi-building-fill-check"></i> Guardar</button>
+            <button type="submit" class="btn btn-success" id="btnGuardar" name="btnGuardar"><i class="bi bi-calendar-check-fill"></i> Guardar</button>
         </form>
 
 

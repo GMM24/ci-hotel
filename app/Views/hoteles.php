@@ -10,13 +10,12 @@
     <title>Hoteles</title>
 </head>
 
-<body>
+<body class="bg-primary-subtle ">
     <div class="container">
         <h1>Hoteles</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="<?php echo base_url ('/');?>">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand" href="<?php echo base_url ('/');?>"><i class="bi bi-house-fill"></i>Inicio</a>                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,7 +30,7 @@
                             <li><a class="dropdown-item" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-people-fill"></i> Clientes</a></li>
                             <li><a class="dropdown-item" href="<?php echo base_url ('ver_hotel');?>"><i class="bi bi-building-fill"></i> Hoteles</a></li>
                             <li><a class="dropdown-item"
-                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar2-week-fill"></i> Reservaciones</a></li>
+                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar-event-fill "></i> Reservaciones</a></li>
                         </ul>
                         </li>
 
@@ -51,6 +50,8 @@
                     <th>Id de Ciudad</th>
                     <th>Id de Categoria</th>
                     <th>Id de Usuario</th>
+                    <th class="text-center">Acciones:</th>
+                    <th></th>
                 
 
                 </tr>
@@ -68,9 +69,10 @@
                     <td><?php echo $hoteles['ciudad_id'];?></td>
                     <td><?php echo $hoteles['categoria_id'];?></td>
                     <td><?php echo $hoteles['usuario_id'];?></td>
-
-                    <td><a href="<?=base_url('buscar_hotel/').$hoteles['hotel_id']?>"class="btn btn-outline-warning"><i class="bi bi-pencil-fill"></i>Editar</a></td>
-                    <td><a href="<?=base_url('eliminar_hotel/').$hoteles['hotel_id']?>"class= "btn btn-outline-danger"><i class="bi bi-person-x-fill"></i>Eliminar</a></td>
+                    <td><a href="<?=base_url('buscar_hotel/').$hoteles['hotel_id']?>"class="btn btn-outline-warning"><i class="bi bi-pencil-fill"></i> Editar</a></td>
+                    <td><a href="<?=base_url('eliminar_hotel/').$hoteles['hotel_id']?>"class= "btn btn-outline-danger"><i class="bi bi-building-fill-x"></i> Eliminar</a></td>
+          
+                   
 
                 </tr>
                 <?php endforeach;?>

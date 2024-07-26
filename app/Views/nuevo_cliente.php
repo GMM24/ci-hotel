@@ -8,13 +8,13 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Clientes</title>
 </head>
-<body>
+<body class="bg-primary-subtle">
     <div class="container">
     <h1>Nuevo Cliente</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="<?php echo base_url ('/');?>">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            <a class="navbar-brand" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-person-circle"></i> Clientes</a>                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -26,10 +26,10 @@
                             Clientes
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-people-fill"></i> Clientes</a></li>
+                        <li><a class="dropdown-item" href="<?php echo base_url ('ver_cliente');?>"><i class="bi bi-people-fill"></i> Clientes</a></li>
                             <li><a class="dropdown-item" href="<?php echo base_url ('ver_hotel');?>"><i class="bi bi-building-fill"></i> Hoteles</a></li>
                             <li><a class="dropdown-item"
-                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar2-week-fill"></i> Reservaciones</a></li>
+                                    href="<?php echo base_url ('ver_reservacion');?>"><i class="bi bi-calendar-event-fill "></i> Reservaciones</a></li>
                         </ul>
                     </li>
 
@@ -40,38 +40,38 @@
     <form action="agregar_cliente" method="post">
         <div class="mb-3">
             <label for="txtIdCliente" class="form-label">Id de Cliente</label>
-            <input type="number" class="form-control" id="txtIdCliente" name="txtIdCliente" placeholder="Ingrese DPI">
+            <input type="number" class="form-control" id="txtIdCliente" name="txtIdCliente" placeholder="Ingrese Id del cliente">
         </div>
         <div class="mb-3">
             <label for="txtNombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Ingrese Apellido">
+            <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Ingrese Nombre del cliente">
         </div>
         <div class="mb-3">
             <label for="txtApellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Ingrese Nombre">
+            <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Ingrese Apellido del cliente">
         </div>
         <div class="mb-3">
             <label for="txtNit" class="form-label">Nit</label>
             <input type="number" class="form-control" id="txtNit" name="txtNit"
-                placeholder="Ingrese su DIrección">
+                placeholder="Ingrese el nit del cliente">
         </div>
         <div class="mb-3">
             <label for="txtTelefono" class="form-label">Teléfono</label>
             <input type="number" class="form-control" id="txtTelefono" name="txtTelefono"
-                placeholder="Ingrese su Numero de telefono">
+                placeholder="Ingrese su Numero de telefono del cliente">
         </div>
         <div class="mb-3">
             <label for="txtCorreo" class="form-label">Correo Electrónico</label>
             <input type="text" class="form-control" id="txtCorreo" name="txtCorreo"
-                placeholder="Ingrese Número de telefono">
+                placeholder="Ingrese el correo electronico del cliente">
         </div>
         <div class="mb-3">
             <label for="txtDireccion" class="form-label">Direccion</label>
             <input type="text" class="form-control" id="txtDireccion" name="txtDireccion"
-                placeholder="Ingrese su correo electronico">
+                placeholder="Ingrese la direccion de domicilio del cliente">
         </div>
 
-        <button type="submit" class="btn btn-primary" id="btnGuardar" name="btnGuardar"><i class="bi bi-person-check-fill"></i> Guardar</button>
+        <button type="submit" class="btn btn-success" id="btnGuardar" name="btnGuardar"><i class="bi bi-person-check-fill"></i> Guardar</button>
     </form>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
