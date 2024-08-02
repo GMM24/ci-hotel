@@ -51,11 +51,11 @@
             </div>
             <div class="mb-3">
                 <label for="txtCliente" class="form-label">Id de Cliente</label>
-                <input type="number" class="form-control" id="txtCliente" name="txtCliente" placeholder="Ingrese el Id del cliente"  value="<?=$datos['cliente_id'];?>">
+                <input type="number" class="form-control" id="txtCliente" name="txtCliente" placeholder="Ingrese el Id del cliente"  value="<?=$datos['cliente_id'];?>" required>
             </div>
             <div class="mb-3">
                 <label for="txtIdHotel" class="form-label">Id del Hotel</label>
-                <input type="number" class="form-control" id="txtIdHotel" name="txtIdHotel" placeholder="Ingrese el id edl hotel"  value="<?=$datos['hotel_id'];?>">
+                <input type="number" class="form-control" id="txtIdHotel" name="txtIdHotel" placeholder="Ingrese el id edl hotel"  value="<?=$datos['hotel_id'];?>" required>
             </div>
             <div class="mb-3">
                 <label for="txtDescripcion" class="form-label">Descripción</label>
@@ -64,7 +64,7 @@
             </div>
             <div class="mb-3">
                 <label for="txtIdUsuario" class="form-label">Id de Usuario</label>
-                <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdUsuario" name="txtIdUsuario" value="<?=$datos['usuario_id'];?>">
+                <select class="form-select form-select-sm" aria-label="Small select example" id="txtIdUsuario" name="txtIdUsuario" value="<?=$datos['usuario_id'];?>" required>
                     <option selected>Selecione Nombre de la ciudad</option>
                     <option value="2">Soyla Recepcionista</option>
                     <option value="5">Juan Perez</option>
